@@ -6,26 +6,36 @@ from wheels import MakeDir
 
 def PreLoad():
     print("")
-    print("")
-    print("         /888\\                                              ")
-    print("         8   6|                                              ")
-    print("         8   6                                               ")
-    print("         8 OO                                                ")
-    print("        /8O                 88  88                           ")
-    print('       08/                  88  ""                           ')
+    print("          ___")
+    print("         q888p                                              ")
+    print("        8   60                                              ")
+    print("        8   6                                               ")
+    print("        8 OO                                                ")
+    print("        8O                 q88  88                           ")
+    print('       08p                  88  ""                           ')
     print("      0 8                   88                               ")
-    print("    00  8        ,adPPYba,  88  88  8b,dPPYba,    ,adPPYba,   ooo    qoob  ")
-    print('   0    8       a8P_____88. 88  88  88P`   `"8a  a8P_____88. b   p  q    b ')
-    print('_00     8    /008PP"""""""0 88  88  88       88  8PP"""""""0      88       ')
-    print('0       8  00/  "8b,   ,__  88  88  88       88  "8b,   ,__  o   q  p    p ')
-    print('        800      `"Ybbd8"`  88  88  88       88   `"Ybbd8"`   doob   doop  ')
-    print("       08                                                    ")
-    print("     0/ 8                                                    ")
-    print("   0/   p                                                    ")
-    print("  0/   p/                                                    ")
-    print(" 0|    p/                                                    ")
-    print(" q    p/                                                     ")
-    print(" \\b000/                                                     ")
+    print(
+        "    00  8        ,adPPYba,  88 d88 d8b,dPPYbap    ,adPPYba,   dooo    qoob  "
+    )
+    print(
+        '   0    8       a8P_____88. 88  88  88P`   `"8a  a8P_____88. 0p   p  q    0 '
+    )
+    print(
+        '_00     8    d008PP"""""""0 88  88  88       88  8PP""""""" 0p     88     0 '
+    )
+    print(
+        '0       8  00p  "8b,   ,__  88  88  88       88  "8b,     _bp    qq  p    0 '
+    )
+    print(
+        '        800      `"Ybbd8"`  88p 88p 88       88p  `"Ybbd80p     dp    doop  '
+    )
+    print("       08    __________________________________________________dp ")
+    print("     0p 8    00000000000000000000000000000000000000000000000000p")
+    print("   0p   p                                                    ")
+    print("  0p   pp                                                    ")
+    print(" 00    pp           FelineXEditor | by 田悠汗X 晋珞涵        ")
+    print(" q    pp                                                     ")
+    print(" qb000p                                                     ")
     print("   **                                                        ")
     print("|你好，我是Feline-pi，Feline编辑器的Python实现+后台")
     print("|请开始你的表演！")
