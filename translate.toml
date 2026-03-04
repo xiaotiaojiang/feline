@@ -1,0 +1,25 @@
+[motion]
+zh_cn = "动作"
+motion_movesteps = "移动 (STEPS) 步"
+[looks]
+zh_cn = "外观"
+looks_sayforsecs = "说 [MESSAGE] (SECS) 秒"
+[sound]
+zh_cn = "声音"
+sound_playuntildone = "播放 [sound_sounds_menu] 并等待"
+[event]
+zh_cn = "事件"
+event_whenflagclicked = "当绿旗被点击"
+[control]
+zh_cn = "控制"
+control_wait = "等待 (DURATION) 秒"
+[sensing]
+zh_cn = "侦测"
+sensing_askandwait = "询问 [QUESTION] 并等待"
+[data]
+zh_cn =  "变量, 列表, 树"
+data_setvariableto = "将变量 [VARIABLE] 设置为 [VALUE]"
+data_addtolist = "向列表 [LIST] 添加 [ITEM]"
+[operator]
+zh_cn = "函数"
+operator_round = "对 (NUM) 执行 [OPERATOR] 操作并返回"

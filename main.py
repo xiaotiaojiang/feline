@@ -5,8 +5,10 @@ from wheels import IsUsable, MakeDir, MoveDir
 EXTRACT_PATH = "proj"
 RESOURCE_PATH = "asset"
 
+
 def PreLoad():
-    print("""
+    print(
+        """
           ___
          q888p
         8   60
@@ -17,7 +19,9 @@ def PreLoad():
       0 8                   88
     00  8        ,adPPYba,  88 d88 d8b,dPPYbap    ,adPPYba,   dooo    qoob
    0    8       a8P_____88. 88  88  88P`   `"8a  a8P_____88. 0p   p  q    0
-_00     8    d008PP"""""""0 88  88  88       88  8PP""""""" 0p     88     0
+_00     8    d008PP"""
+        """"0 88  88  88       88  8PP"""
+        """" 0p     88     0
 0       8  00p  "8b,   ,__  88  88  88       88  "8b,     _bp    qq  p    0
         800      `"Ybbd8"`  88p 88p 88       88p  `"Ybbd80p     dp    doop
        08    __________________________________________________dp
@@ -30,7 +34,9 @@ _00     8    d008PP"""""""0 88  88  88       88  8PP""""""" 0p     88     0
    **
 |你好，我是Feline-pi，Feline编辑器的Python实现+后台
 |请开始你的表演！
-""")
+"""
+    )
+
 
 def LoadScFile():
     print("|当前环节：加载文件")
@@ -56,7 +62,7 @@ def LoadScFile():
         return None
 
     try:
-        with open(EXTRACT_PATH + "/project.json", "r", encoding='utf-8') as metafile:
+        with open(EXTRACT_PATH + "/project.json", "r", encoding="utf-8") as metafile:
             metadata = json.load(metafile)
     except FileNotFoundError:
         print("X project.json 未找到")
@@ -68,7 +74,7 @@ def LoadScFile():
     try:
         metajson = json.dumps(metadata, indent=4)
         print(metajson)
-        with open(EXTRACT_PATH + "/project.json", "w", encoding='utf-8') as metafile:
+        with open(EXTRACT_PATH + "/project.json", "w", encoding="utf-8") as metafile:
             metafile.write(metajson)
         characters = metadata.get("targets", [])
     except Exception as e:
@@ -90,6 +96,7 @@ def LoadScFile():
 
     return metadata
 
+
 def BasicProcess(metadata):
     if not metadata:
         print("X 没有元数据，无法进行基本处理")
@@ -98,7 +105,9 @@ def BasicProcess(metadata):
     try:
         metadata.setdefault("meta", {}).setdefault("platform", {})
         metadata["meta"]["platform"]["name"] = "FelineX"
-        metadata["meta"]["platform"]["url"] = "FelineX是由田悠汗制作的Scratch编辑器, 基于Feline_Editor和Turbowarp"
+        metadata["meta"]["platform"]["url"] = (
+            "FelineX是由田悠汗制作的Scratch编辑器, 基于Feline_Editor和Turbowarp"
+        )
         print("|变量: ")
         for item in metadata.get("targets", []):
             for values in item.get("variables", {}):
@@ -108,8 +117,10 @@ def BasicProcess(metadata):
             for values in item.get("lists", {}):
                 print("名称: " + item["lists"][values][0])
                 print("值: " + ",".join(str(x) for x in item["lists"][values][1]))
+
     except Exception as e:
         print(f"X 基本处理错误：{e}")
+
 
 def main():
     PreLoad()
@@ -118,6 +129,7 @@ def main():
     print("|文件加载完毕")
     BasicProcess(metadata)
     print("|作品加载完毕")
+
 
 if __name__ == "__main__":
     try:
